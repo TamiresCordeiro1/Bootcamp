@@ -1,0 +1,61 @@
+cd - cd / -> vai pra pasta raiz do pc. cd windows -> entra na pasta windows. cd .. -> volta 1 pasta
+
+dir - lista de diretórios dentro da pasta que estou
+
+mkdir - cria a pasta. exemplo: mkdir (nome da pasta)
+
+del - apaga os arquivos da pasta
+
+rmdir - exclue o diretorio(pasta) com tudo dentro. exemplo: rmdir (nome da pasta) /S /Q
+
+cls - limpar a tela do terminal
+
+ctrl+ l - limpa o terminal Bash
+
+ls - lista 
+
+echo - imprime na tela. exemplo: echo hello > hello.txt
+
+ls -a - serve para ver arquivo oculto dentro da pasta que estamos
+ 
+echo > (nome arquivo).md : criar o README.md
+
+
+-----------Criar chave ssh-----------
+ssh-keygen -t ed25519 -C tamiresdevcordeiro@gmail.com
+
+senha:260870
+
+entra na pasta onde está a chave ssh: cd /c/Users/nimas/.ssh
+
+cat id_ed25519.pub: pedindo pra mostrar conteúdo da chave
+
+eval $(ssh-agent -s): vai mostrar o agente pra adicionar
+
+ssh-add id_ed25519
+senha:260870  : Agora adicionamos a chave ssh com nosso github
+
+------------------------clonando repositório-----------------
+Copia o https do repositório lá no github
+
+git clone git@github.com:TamiresCordeiro1/Desafios-DIO.git(exemplo de repositorio)
+
+---------------------------criando um repositório---------------
+entra na pasta que você quer criar seu repositório
+cd /c/bootcamp : pasta que vai ser o repositório
+
+git init : inicia o git dentro dessa pasta
+
+git add * : para adicionar os arquivos no commit
+
+git commit -m "Mensagem do commit" : faz o commit
+
+--------------atualizando arquivo local para github-------------
+git remote add origin (hhtps do repositorio no github) : aqui você vai colocar seus arquivos locais no github
+
+git remote -v : para ver as listas de repositórios cadastrados
+
+git push origin master : vai empurrar as atualização por github
+
+
+
