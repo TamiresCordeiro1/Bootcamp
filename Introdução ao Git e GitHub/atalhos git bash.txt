@@ -51,11 +51,19 @@ git add * : para adicionar os arquivos no commit
 git commit -m "Mensagem do commit" : faz o commit
 
 --------------atualizando arquivo local para github-------------
-git remote add origin (hhtps do repositorio no github) : aqui você vai colocar seus arquivos locais no github
+git remote add origin (https do repositorio no github) : aqui você vai colocar seus arquivos locais no github
 
 git remote -v : para ver as listas de repositórios cadastrados
 
 git push origin master : vai empurrar as atualização por github
 
+----------------excluindo .git quando der problema------------
+entra na pasta onde está o repositório e depois segue os comandos
+
+ls -a : pra listar e ver se tem mesmo o arquivo .git
+
+rm -fr .git : vai excluir a força o arquivo .git
+
+depois inicia o processo de criação de repositório!!!!
 
 
